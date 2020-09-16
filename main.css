@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+}
+
+/* normal mode */
+
+.normalMode {
+  background: black;
+  margin: 20px;
+  padding: 5px 5px 10px;
+  border: 1px solid black;
+  width: 465px;
+  height: 100px;
+}
+
+.boxes {
+  display: flex;
+  gap: 5px;
+}
+
+h1 {
+  border: 1px solid black;
+  width: 150px;
+  height: 105px;
+  text-align: right;
+  justify-items: right;
+  background: lightblue;
+  font-size: 70px;
+}
+
+.boxes input {
+  height: 18px;
+  background: lightblue;
+}
+
+.symbols {
+  width: 310px;
+  height: 80px;
+  display: flex;
+  margin-top: -80px;
+  gap: 5px;
+}
+
+.symbols button {
+  width: 83px;
+  background: lightblue;
+  font-size: 26px;
+}
+
+/* adventure mode */
+
+.adventureMode {
+  display: grid;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  gap: 1px;
+  margin-right: 35%;
+  margin-left: 35%;
+  height: 480px;
+  padding: 5px;
+}
+
+.adventureMode button {
+  background: rgb(18, 219, 18);
+  border: none;
+}
+
+.adventureMode button:hover {
+  background: rgb(166, 246, 166);
+}
+
+/* firstRow with 'clear(C)' and blank display */
+
+.firstRow {
+  display: grid;
+  grid-row: 1;
+  grid-template-columns: 1fr 3fr;
+  gap: 2px;
+}
+
+.clearDiv {
+  display: grid;
+  grid-column: 1;
+}
+
+.blankAreaDiv {
+  display: grid;
+  grid-column: 2;
+  unicode-bidi: bidi-override;
+  direction: RTL;
+}
+
+.blankArea {
+  font-size: 25pt;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  overflow: hidden;
+  background: rgb(18, 219, 18);
+}
+
+/* secondRow with '7, 8, 9 and divide' */
+
+.secondRow {
+  display: grid;
+  grid-row: 2;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1px;
+}
+
+.sevenDiv {
+  display: grid;
+  grid-column: 1;
+}
+
+.eightDiv {
+  display: grid;
+  grid-column: 2;
+}
+
+.nineDiv {
+  display: grid;
+  grid-column: 3;
+}
+
+.divideDiv {
+  display: grid;
+  grid-column: 4;
+  background: rgb(166, 246, 166);
+}
+
+/* thirdRow with '4, 5, 6 and multiply' */
+
+.thirdRow {
+  display: grid;
+  grid-row: 3;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1px;
+}
+
+.fourDiv {
+  display: grid;
+  grid-column: 1;
+}
+
+.fiveDiv {
+  display: grid;
+  grid-column: 2;
+}
+
+.sixDiv {
+  display: grid;
+  grid-column: 3;
+}
+
+.multiplyDiv {
+  display: grid;
+  grid-column: 4;
+  background: rgb(166, 246, 166);
+}
+
+/* fourthRow with '1, 2, 3 and minus' */
+
+.fourthRow {
+  display: grid;
+  grid-row: 4;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1px;
+}
+
+.oneDiv {
+  display: grid;
+  grid-column: 1;
+}
+
+.twoDiv {
+  display: grid;
+  grid-column: 2;
+}
+
+.threeDiv {
+  display: grid;
+  grid-column: 3;
+}
+
+.minusDiv {
+  display: grid;
+  grid-column: 4;
+  background: rgb(166, 246, 166);
+}
+
+/* fifthRow with '0, dot(.), equal and plus' */
+
+.fifthRow {
+  display: grid;
+  grid-row: 5;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1px;
+}
+
+.zeroDiv {
+  display: grid;
+  grid-column: 1;
+}
+
+.dotDiv {
+  display: grid;
+  grid-column: 2;
+}
+
+.equalDiv {
+  display: grid;
+  grid-column: 3;
+}
+
+.plusDiv {
+  display: grid;
+  grid-column: 4;
+  background: rgb(166, 246, 166);
+}
